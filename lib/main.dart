@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'button.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -34,7 +36,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    Size size=MediaQuery.of(context).size;
 
-    return Scaffold();
+    return Scaffold(backgroundColor: Colors.black,body: ButtonWidget(text: "Login", size: size,),
+    );
   }
 }
