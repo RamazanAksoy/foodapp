@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodapp/pages/splashscreen.dart';
+import 'package:foodapp/restaurantlistitem.dart';
 
 import 'appbar.dart';
 import 'button.dart';
@@ -28,19 +29,14 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
 
-
-
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
   @override
   Widget build(BuildContext context) {
-    Size size=MediaQuery.of(context).size;
-
+    Size size = MediaQuery.of(context).size;
     return Scaffold(backgroundColor: Colors.white,body: CategoriesWidget( size: size,title: "Pizza",imageurl: "assets/categories1.png"),
     );
   }
