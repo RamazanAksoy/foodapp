@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodapp/pages/splashscreen.dart';
 
+import 'appbar.dart';
 import 'button.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(),
+      home: const MyHomePage(),
     );
   }
 }
@@ -39,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     Size size=MediaQuery.of(context).size;
 
-    return Scaffold(backgroundColor: Colors.black,body: ButtonWidget(text: "Login", size: size,),
+    return Scaffold(backgroundColor: Colors.white,body: AppbarWidget(),
     );
   }
 }
