@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:foodapp/pages/splashscreen.dart';
+import 'package:foodapp/restaurantlistitem.dart';
 
+import 'appbar.dart';
 import 'button.dart';
-import 'discount.dart';
+import 'categories.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,15 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: DiscountWidget(
-          size: size,
-          resimurl: "assets/discount.png",
-          buttontitle: "Claim Voucher",
-          title: "Get Special Discount",
-          discounttext: "up to 75%"),
+    return Scaffold(backgroundColor: Colors.white,body: CategoriesWidget( size: size,title: "Pizza",imageurl: "assets/categories1.png"),
     );
   }
 }
