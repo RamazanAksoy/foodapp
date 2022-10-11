@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodapp/pages/splashscreen.dart';
 
+import 'appbar.dart';
 import 'button.dart';
 import 'categories.dart';
 
