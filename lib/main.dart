@@ -3,6 +3,7 @@ import 'package:foodapp/pages/splashscreen.dart';
 
 import 'appbar.dart';
 import 'button.dart';
+import 'categories.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     Size size=MediaQuery.of(context).size;
 
-    return Scaffold(backgroundColor: Colors.white,body: AppbarWidget(),
+    return Scaffold(backgroundColor: Colors.white,body: CategoriesWidget( size: size,title: "Pizza",imageurl: "assets/categories1.png"),
     );
   }
 }
