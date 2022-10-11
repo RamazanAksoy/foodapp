@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:foodapp/pages/splashscreen.dart';
 import 'package:foodapp/restaurantlistitem.dart';
 
+import 'appbar.dart';
 import 'button.dart';
+import 'categories.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,17 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: RestaurantListItem(
-          imageUrl: "assets/restaurant2.png",
-          restaurantName: "Burger King",
-          rating: "4.5",
-          hourTime: "25-35 mins",
-          size: size,
-          far: "8 km",
-          newIs: true),
+    return Scaffold(backgroundColor: Colors.white,body: CategoriesWidget( size: size,title: "Pizza",imageurl: "assets/categories1.png"),
     );
   }
 }
