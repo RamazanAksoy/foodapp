@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:foodapp/pages/splashscreen.dart';
 
 import 'button.dart';
+import 'discount.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(),
+      home: const MyHomePage(),
     );
   }
 }
@@ -26,20 +27,23 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
 
-
-
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
   @override
   Widget build(BuildContext context) {
-    Size size=MediaQuery.of(context).size;
+    Size size = MediaQuery.of(context).size;
 
-    return Scaffold(backgroundColor: Colors.black,body: ButtonWidget(text: "Login", size: size,),
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: DiscountWidget(
+          size: size,
+          resimurl: "assets/discount.png",
+          buttontitle: "Claim Voucher",
+          title: "Get Special Discount",
+          discounttext: "up to 75%"),
     );
   }
 }
