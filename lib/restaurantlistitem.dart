@@ -24,8 +24,8 @@ class RestaurantListItem extends StatelessWidget {
     return Container(
       width: size.width,
       height: size.height / 10 * 1.25,
-      margin: EdgeInsets.symmetric(
-          horizontal: size.width / 10 * 0.5, vertical: size.height / 10 * 0.5),
+      margin: EdgeInsets.only(
+         right: 15,   left: 15, bottom: size.height / 10 * 0.2),
       decoration: BoxDecoration(boxShadow: [
         BoxShadow(
           color: Colors.black.withOpacity(0.12),

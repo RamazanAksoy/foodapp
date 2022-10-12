@@ -9,7 +9,7 @@ class SearchWidget extends StatelessWidget {
     double uzunluk = MediaQuery.of(context).size.height;
     return Container(
       margin: EdgeInsets.only(left: 20),
-      width: genislik / 10 * 9,
+      width: genislik / 10 * 9.25,
       height: uzunluk / 10 * 0.75,
       child: Row(
         children: [

@@ -19,7 +19,7 @@ class DiscountWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: size.width,
-      margin: EdgeInsets.symmetric(horizontal: size.width/10*0.5,vertical: size.height/10*0.5),
+      margin: EdgeInsets.symmetric(horizontal: 15,vertical: 15),
       height: size.height / 10 * 2,
       padding: EdgeInsets.only(left: 30),
       decoration: BoxDecoration(

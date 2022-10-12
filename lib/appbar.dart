@@ -11,7 +11,7 @@ class AppbarWidget extends StatelessWidget {
     return SafeArea(
       top: true,
       child: Container(
-        margin: EdgeInsets.only(top: uzunluk / 10 * 0.3),
+        margin: EdgeInsets.only(top: uzunluk / 10 * 0.3,left: 10,right: 10),
         width: genislik,
         height: uzunluk / 10 * 0.6,
         child: Row(children: [
