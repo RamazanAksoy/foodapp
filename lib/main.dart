@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/pages/home.dart';
 import 'package:foodapp/pages/splashscreen.dart';
 import 'package:foodapp/restaurantlistitem.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: const Home(),
     );
   }
 }
