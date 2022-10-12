@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/pages/fooddetails.dart';
 import 'package:foodapp/pages/home.dart';
 import 'package:foodapp/pages/splashscreen.dart';
-import 'package:foodapp/restaurantlistitem.dart';
+import 'package:foodapp/widgets/home/restaurantlistitem.dart';
 
-import 'appbar.dart';
-import 'button.dart';
-import 'categories.dart';
+import 'widgets/home/appbar.dart';
+import 'widgets/splash/button.dart';
+import 'widgets/home/categories.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Home(),
+      home: const FoodDetailsScreen(),
     );
   }
 }

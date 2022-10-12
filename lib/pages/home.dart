@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:foodapp/appbar.dart';
-import 'package:foodapp/categories.dart';
-import 'package:foodapp/discount.dart';
-import 'package:foodapp/restaurantlistitem.dart';
-import 'package:foodapp/search.dart';
+import 'package:foodapp/widgets/home/appbar.dart';
+import 'package:foodapp/widgets/home/categories.dart';
+import 'package:foodapp/widgets/home/discount.dart';
+import 'package:foodapp/widgets/home/restaurantlistitem.dart';
+import 'package:foodapp/widgets/home/search.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatefulWidget {
